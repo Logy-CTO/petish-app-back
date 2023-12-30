@@ -14,7 +14,7 @@ public class UserSignupDTO {
     private String bank_name;
     private String account_number;
     private String real_name;
-    private String area;
+    private String area_name;
 
     public UserEntity toEntity(){
         return UserEntity.builder()
@@ -24,7 +24,7 @@ public class UserSignupDTO {
                 .bank_name(bank_name)
                 .account_number(account_number)
                 .real_name(real_name)
-                .area(area)
+                .area_name(area_name)
                 .build();
     }
 
@@ -36,7 +36,7 @@ public class UserSignupDTO {
             String bank_name,
             String account_number,
             String real_name,
-            String area
+            String area_name
     )
     {
       this.user_id = user_id;
@@ -45,6 +45,6 @@ public class UserSignupDTO {
       this.bank_name = bank_name;
       this.account_number = account_number;
       this.real_name = real_name;
-      this.area = area;
+      this.area_name = area_name;
     }
 }

@@ -19,8 +19,8 @@ public class UserEntity {
     @Column(name = "ACCOUNT_NUMBER")
     private String account_number;
 
-    @Column(name = "Area")
-    private String area;
+    @Column(name = "AREA_NAME")
+    private String area_name;
 
     @Column(name = "BANK_NAME")
     private String bank_name;
@@ -47,14 +47,14 @@ public class UserEntity {
                 .bank_name(bank_name)
                 .account_number(account_number)
                 .real_name(real_name)
-                .area(area)
+                .area_name(area_name)
                 .build();
     }
 
     @Builder
     public UserEntity(Long user_id,
                       String account_number,
-                      String area,
+                      String area_name,
                       String bank_name,
                       Long interest_post,
                       String phone_number,
@@ -68,6 +68,6 @@ public class UserEntity {
         this.phone_number = phone_number;
         this.real_name = real_name;
         this.user_name = user_name;
-        this.area = area;
+        this.area_name = area_name;
     }
 }
