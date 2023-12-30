@@ -1,5 +1,5 @@
 package com.example.demo.User;
-
+import com.example.demo.User.UserEntity;
 import lombok.*;
 import org.apache.catalina.User;
 

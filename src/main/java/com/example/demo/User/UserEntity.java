@@ -2,7 +2,6 @@ package com.example.demo.User;
 
 import lombok.Builder;
 import lombok.Getter;
-
 import javax.persistence.*;
 
 @Entity
