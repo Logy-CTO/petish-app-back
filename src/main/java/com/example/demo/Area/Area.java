@@ -6,10 +6,10 @@ import lombok.Getter;
 @Entity
 @Table(name = "area")
 @Getter
-public class AreaEntity {
+public class Area {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "ID")
     private Long id;
 
     @Column(name = "AREA_NAME")
