@@ -37,6 +37,10 @@ public class UserEntity {
     @Column(name = "USER_NAME")
     private String user_name;
 
+    public UserEntity() {
+
+    }
+
 
     public UserSignupDTO toDTO(){
         return UserSignupDTO.builder()

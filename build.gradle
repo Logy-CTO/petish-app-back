@@ -31,7 +31,7 @@ dependencies {
     compileOnly 'org.projectlombok:lombok:1.18.20'
     annotationProcessor 'org.projectlombok:lombok:1.18.20'
     implementation 'org.springframework.boot:spring-boot-starter'
-
+    developmentOnly("org.springframework.boot:spring-boot-devtools")//properties 수정 시 자동 재시작
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 
     implementation group: "mysql", name: "mysql-connector-java", version: "8.0.+"
