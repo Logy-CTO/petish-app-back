@@ -9,7 +9,7 @@ import javax.persistence.*;
 @Getter
 @Table(name = "USER")
 
-public class UserEntity {
+public class User {
     @Id
     //gerneratedVALUE SQL 시퀀스 사용 후 수정필요
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -30,7 +30,7 @@ public class UserEntity {
     private Long interest_post;
 
     @Column(name = "PHONE_NUMBER")
-    private String phone_number;
+    private String phone;
 
     @Column(name = "REAL_NAME")
     private String real_name;
@@ -39,33 +39,21 @@ public class UserEntity {
     private String user_name;
 
 
-    public UserSignupDTO toDTO(){
-        return UserSignupDTO.builder()
-                .user_id(user_id)
-                .phone_number(phone_number)
-                .user_name(user_name)
-                .bank_name(bank_name)
-                .account_number(account_number)
-                .real_name(real_name)
-                .area(area)
-                .build();
-    }
-
     @Builder
-    public UserEntity(Long user_id,
-                      String account_number,
-                      String area,
-                      String bank_name,
-                      Long interest_post,
-                      String phone_number,
-                      String real_name,
-                      String user_name)
+    public User(Long user_id,
+                String account_number,
+                String area,
+                String bank_name,
+                Long interest_post,
+                String phone,
+                String real_name,
+                String user_name)
     {
         this.user_id = user_id;
         this.account_number = account_number;
         this.bank_name = bank_name;
         this.interest_post = interest_post;
-        this.phone_number = phone_number;
+        this.phone = phone;
         this.real_name = real_name;
         this.user_name = user_name;
         this.area = area;
