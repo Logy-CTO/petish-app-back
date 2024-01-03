@@ -6,7 +6,7 @@ import lombok.*;
 @Getter
 @Setter
 @NoArgsConstructor
-class SignupDto {
+public class SignupDto {
     private Long user_id;
     @NotNull
     private String phone_number;
