@@ -9,7 +9,7 @@ import lombok.Getter;
 public class Area {
 
     @Id
-    @Column(name = "ID")
+    @Column(name = "ID") //test
     private Long id;
 
     @Column(name = "AREA_NAME")
