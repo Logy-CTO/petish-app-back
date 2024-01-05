@@ -25,11 +25,11 @@ public class SignupDto {
             String real_name
     )
     {
-      this.user_id = user_id;
-      this.phone_number = phone_number;
-      this.user_name = user_name;
-      this.bank_name = bank_name;
-      this.account_number = account_number;
-      this.real_name = real_name;
+        this.user_id = user_id;
+        this.phone_number = phone_number;
+        this.user_name = user_name;
+        this.bank_name = bank_name;
+        this.account_number = account_number;
+        this.real_name = real_name;
     }
 }

@@ -1,9 +1,9 @@
-# Petish-app-back
-📁 Petish 앱(Flutter) 스프링 백엔드 구현
+# isHere
+📁 isHere 앱(Flutter) 스프링 백엔드 구현
 
 # 🌐 Petish: Spring Boot Backend
 
-Petish는 반려동물 데이팅 앱입니다. 이 저장소는 Petish 앱의 스프링 백엔드 구현 부분을 담고 있습니다.
+isHere는 분실물 사례금 어플입니다. 이 저장소는 Petish 앱의 스프링 백엔드 구현 부분을 담고 있습니다.
 
 ## 🚀 시작하기
 
@@ -44,3 +44,4 @@ Others: [Flutter,JS,Naver Cloud,Ngnix]
 
 ### 📞 연락처
 hongtaiksu - @logy_cto - hong2hwa58@email.com
+kookhyeonwoo - @Kookutility

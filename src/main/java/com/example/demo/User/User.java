@@ -19,8 +19,8 @@ public class User {
     @Column(name = "ACCOUNT_NUMBER")
     private String account_number;
 
-    @Column(name = "Area")
-    private String area;
+    @Column(name = "AREA_NAME")
+    private String area_name;
 
     @Column(name = "BANK_NAME")
     private String bank_name;
@@ -42,7 +42,7 @@ public class User {
     @Builder
     public User(Long user_id,
                 String account_number,
-                String area,
+                String area_name,
                 String bank_name,
                 Long interest_post,
                 String phone,
@@ -56,6 +56,6 @@ public class User {
         this.phone = phone;
         this.real_name = real_name;
         this.user_name = user_name;
-        this.area = area;
+        this.area_name = area_name;
     }
 }
