@@ -71,4 +71,8 @@ public class Post {
         this.transactionStatus = transactionStatus;
         this.areaName = areaName;
     }
+
+    public Post() {
+
+    }
 }
