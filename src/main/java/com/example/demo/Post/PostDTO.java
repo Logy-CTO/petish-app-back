@@ -53,22 +53,5 @@ public class PostDTO {
         this.transactionStatus = transactionStatus;
         this.areaName = areaName;
     }
-
-    // Post 객체로 변환하는 메서드
-    public Post toEntity() {
-        return Post.builder()
-                .postId(postId)
-                .userId(userId)
-                .categoryType(categoryType)
-                .postTitle(postTitle)
-                .immediateCase(immediateCase)
-                .reward(reward)
-                .description(description)
-                .location(location)
-                .createdAt(createdAt)
-                .transactionStatus(transactionStatus)
-                .areaName(areaName)
-                .build();
-    }
 }
 

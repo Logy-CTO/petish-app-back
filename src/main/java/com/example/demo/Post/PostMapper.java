@@ -1,14 +1,11 @@
 package com.example.demo.Post;
 
+import com.example.demo.User.SignupDto;
+import com.example.demo.User.User;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
-@Mapper
+@Mapper(componentModel = "spring")
 public interface PostMapper {
-
-    PostMapper INSTANCE = Mappers.getMapper(PostMapper.class);
-
-    PostDTO postToPostDTO(Post post);
-
-    Post postDTOToPost(PostDTO postDTO);
+    public Post postDtoToPost(PostDTO PostDTO);
 }
