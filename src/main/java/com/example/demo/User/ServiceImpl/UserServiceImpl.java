@@ -5,6 +5,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
+import java.util.List;
 
 @Service
 @RequiredArgsConstructor
@@ -26,4 +27,11 @@ public class UserServiceImpl implements UserService {
         return user.getUser_id();
     }
 
+    @Override
+    public List<User> getAllUsers() {
+        // 데이터베이스에서 모든 사용자를 가져오는 로직
+        List<User> users = userRepository.findAll();
+
+        return users;
+    }
 }

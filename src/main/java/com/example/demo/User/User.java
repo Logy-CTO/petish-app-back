@@ -58,4 +58,8 @@ public class User {
         this.user_name = user_name;
         this.area_name = area_name;
     }
+
+    public User() {
+
+    }
 }
